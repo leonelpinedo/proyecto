@@ -1,0 +1,734 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*index*/
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 110px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header img {
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 40px;
+
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+/* main */
+
+/* portada */
+
+.main div {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/salon-adentro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+    color: white
+}
+
+/*sección uno */
+
+.seccion-uno {
+    display: flex;
+    align-items: center;
+}
+
+.seccion-uno img {
+    width: 600px;
+    height: 600px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.seccion-uno p {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+/* sección dos */
+
+.seccion-dos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.seccion-dos div h2 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    padding: 30px;
+
+}
+
+
+
+.seccion-dos img {
+    width: 700px;
+    height: 350px;
+    padding: 20PX;
+
+}
+
+
+/* footer */
+
+.footer span {
+    margin: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    background-color: #789395;
+}
+
+.footer img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/*quienes somos*/
+
+/*portada*/
+
+.div-h1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/frente-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+    color: white
+}
+
+
+
+/*seccion quienes somos*/
+
+
+.seccion-quienesSomos>div {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+.seccion-quienesSomos>div img {
+    width: 600px;
+    height: 600px;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.seccion-quienesSomos div div {
+
+    flex-direction: column;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+
+
+
+/*servicios*/
+
+/*portada*/
+
+.div-h1-servicios {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/mesa1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+    color: white
+}
+
+/* seccion */
+
+h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main-servicios section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+.h3-parrafos {
+    display: flex;
+    padding: 20px
+}
+
+.h3-parrafos h3 {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h3-p {
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* galería*/
+
+
+.galeria-h1 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+.galeria-contenedor {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+
+}
+
+
+.imagen-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    -webkit-box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+}
+
+.imagen-galeria:nth-child(1) {
+
+    grid-row-start: span 2;
+
+}
+
+
+.imagen-galeria:nth-child(3) {
+    grid-row-start: span 2;
+}
+
+.imagen-galeria:nth-child(5) {
+    grid-column-start: span 2;
+}
+
+.imagen-galeria:nth-child(7) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+
+/*contacto*/
+
+body {
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    min-height: 100vh;
+}
+ 
+
+.section {
+    padding: 100px;
+}
+
+
+form {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin: auto;
+
+}
+
+.form-container {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-auto-columns: 100%;
+
+}
+
+.for-title {
+    text-align: center;
+}
+
+.form-imput {
+    font-family: inherit;
+    font-size: 20px;
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 10px;
+}
+
+.form-imput--message {
+    resize: none;
+    padding: 18px 10px;
+    margin-bottom: 5px;
+
+}
+
+.form-cta {
+    font-family: inherit;
+    font-size: 25px;
+    background-color: #8946A6;
+    color: white;
+    border: none;
+    font-weight: 400;
+    padding: 7px o;
+    border-radius: 10px;
+}
+
+
+/*mobile*/
+
+@media (max-width:450px) {
+
+    /*inicio*/
+
+    /* portada */
+
+
+    .main div {
+        font-size: 25px;
+        height: 50vh;
+    }
+
+    /* seccion uno */
+    .seccion-uno {
+        flex-direction: column;
+
+    }
+
+    .seccion-uno img {
+        width: 300px;
+        height: 300px;
+
+    }
+
+
+    .seccion-uno p {
+        font-size: 16px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+
+    /* seccion dos */
+
+
+    .seccion-dos div h2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .imagenes-como-llegar {
+        flex-direction: column;
+    }
+
+    .seccion-dos img {
+        width: 350px;
+        height: 175px;
+        padding: 10px;
+
+    }
+
+    .mapa {
+        width: 350px;
+        height: 200px;
+        padding: 10PX;
+    }
+
+
+
+
+    /* quienes somos */
+
+
+    /* portada */
+
+    .div-h1 {
+        height: 50vh;
+        font-size: 25px;
+    }
+
+    /* seccion quienes somos */
+
+    .seccion-quienesSomos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion-quienesSomos>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion-quienesSomos>div img {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .titulo {
+        font-size: 22px;
+    }
+
+    .seccion-quienesSomos div div {
+
+        font-size: 16px;
+        margin: 10px;
+        padding: 10px;
+
+    }
+
+
+    /* servicios */
+
+    /* portada */
+
+    .div-h1-servicios {
+        font-size: 25px;
+    }
+
+    /* seccion */
+
+    h2 {
+        font-size: 22px;
+    }
+
+
+    .h3-parrafos {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .h3-parrafos h3 {
+        font-size: 17px;
+    }
+
+
+    /*galeria */
+
+    .galeria-h1 {
+        padding: 10px;
+        font-size: 22px;
+    }
+
+    .galeria-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+        padding: 10px;
+    }
+
+
+    .imagen-galeria:nth-child(1) {
+
+        grid-row-start: span 1;
+    }
+
+    .imagen-galeria:nth-child(3) {
+        grid-row-start: span 1;
+    }
+
+
+    .imagen-galeria:nth-child(5) {
+        grid-column-start: span 1;
+
+    }
+
+    .imagen-galeria:nth-child(7) {
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+
+}
+
+
+
+/* tablet */
+
+@media (min-width: 451px) and (max-width :960px) {
+
+
+    /*inicio*/
+
+    /* portada */
+
+
+    .main div {
+
+        font-size: 30px;
+        height: 60vh;
+
+
+    }
+
+    /* seccion uno */
+    .seccion-uno {
+
+        flex-direction: column;
+    }
+
+    .seccion-uno img {
+        width: 420px;
+        height: 420px;
+
+    }
+
+
+    .seccion-uno p {
+        font-size: 22px;
+        margin: 15px;
+        padding: 15px;
+    }
+
+
+    /* seccion dos */
+
+
+    .seccion-dos div h2 {
+        font-size: 30px;
+        padding: 25px;
+        flex-direction: column;
+    }
+
+    .imagenes-como-llegar {
+        flex-direction: column;
+    }
+
+    .seccion-dos img {
+        width: 420px;
+        height: 250px;
+        padding: 15px;
+
+    }
+
+    .mapa {
+        width: 445px;
+        height: 300px;
+        padding: 15px;
+    }
+
+
+
+    /* quienes somos */
+
+
+    /* portada */
+
+    .div-h1 {
+        height: 60vh;
+        font-size: 30px;
+    }
+
+    /* seccion quienes somos */
+
+    .seccion-quienesSomos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion-quienesSomos>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion-quienesSomos>div img {
+        width: 420px;
+        height: 420px;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .titulo {
+        font-size: 22px;
+    }
+
+    .seccion-quienesSomos div div {
+
+        font-size: 18px;
+        margin: 15px;
+        padding: 1px;
+
+    }
+
+    /* servicios */
+
+    /* portada */
+
+    .div-h1-servicios {
+        font-size: 30px;
+    }
+
+    /* seccion */
+
+    h2 {
+        font-size: 25px;
+    }
+
+
+    .h3-parrafos {
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .h3-parrafos h3 {
+        font-size: 20px;
+    }
+
+
+ /*galeria */
+
+ .galeria-h1 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    grid-auto-rows: 200px;
+    padding: 10px;
+}
+
+
+.imagen-galeria:nth-child(1) {
+
+    grid-row-start: span 1;
+}
+
+.imagen-galeria:nth-child(3) {
+    grid-row-start: span 1;
+}
+
+
+.imagen-galeria:nth-child(5) {
+    grid-column-start: span 1;
+
+}
+
+.imagen-galeria:nth-child(7) {
+    grid-column-start: span 1;
+    grid-row-start: span 2;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
