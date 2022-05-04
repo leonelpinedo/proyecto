@@ -6,6 +6,10 @@
 
 /*index*/
 
+.color-nav {
+    background-color: black;
+    max-height: 110px;
+}
 
 .header img {
     width: 100px;
@@ -17,9 +21,9 @@
 
 /* portada */
 
-.main div {
+.div-h1-index {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/salon-adentro.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -35,8 +39,8 @@
     align-items: center;
 }
 
-.main div h1 {
-    font-size: 120px;
+.div-h1-index h1 {
+    font-size: 100px;
     font-family: 'Great Vibes', cursive;
     color: white
 }
@@ -45,53 +49,38 @@
 
 /*sección uno */
 
-.seccion-uno {
-    display: flex;
-    align-items: center;
+.div-principal {
+    padding: 40px;
 }
 
-.seccion-uno img {
-    width: 600px;
-    height: 600px;
-    margin: 20px;
+
+.p-index {
     padding: 20px;
-}
-
-.seccion-uno p {
-
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
+    color: black;
 }
 
 /* sección dos */
 
-.seccion-dos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
 
-}
-
-
-.seccion-dos>div h2 {
+.como-llegar {
 
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     padding: 30px;
     color: white;
+    justify-content: center;
+}
+
+.imagenes-como-llegar {
+    padding: 20px;
 
 }
 
-
-
-.seccion-dos img {
-    width: 700px;
-    height: 350px;
-    padding: 20PX;
-
+.mapa-nav {
+    padding: 20px;
 }
-
 
 /* footer */
 
@@ -133,8 +122,8 @@
 }
 
 
-.main-quienesSomos div h1 {
-    font-size: 120px;
+.div-h1 h1 {
+    font-size: 100px;
     font-family: 'Great Vibes', cursive;
     color: white
 }
@@ -143,38 +132,35 @@
 /*seccion quienes somos*/
 
 
-.seccion-quienesSomos>div {
+.div-quienesSomos> {
 
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+
 
 }
 
-.seccion-quienesSomos>div img {
-    width: 600px;
-    height: 600px;
-    margin: 20px;
-    padding: 20px;
+.div-imagen-mesa {
+    padding: 40px;
+}
 
+.titulo-texto {
+    flex-direction: column;
 }
 
 .titulo {
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
+    color: black;
+
 }
 
-.seccion-quienesSomos div div {
-
-    flex-direction: column;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.texto-quienesSomos {
     font-family: 'Poppins', sans-serif;
-    margin: 20px;
+    font-size: 25px;
+    color: black;
+    padding: 20px;
 }
-
 
 
 /*servicios*/
@@ -197,7 +183,7 @@
 }
 
 .main-servicios div h1 {
-    font-size: 120px;
+    font-size: 100px;
     font-family: 'Great Vibes', cursive;
     color: white
 }
@@ -278,16 +264,11 @@ h2 {
     box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
 }
 
-.imagen-galeria:nth-child(1) {
 
-    grid-row-start: span 2;
-
+.carousel-item {
+    max-height: 40em;
 }
 
-
-.imagen-galeria:nth-child(3) {
-    grid-row-start: span 2;
-}
 
 .imagen-galeria:nth-child(5) {
     grid-column-start: span 2;
@@ -332,7 +313,7 @@ form {
 }
 
 .for-title {
-    text-align:center;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -367,16 +348,16 @@ form {
 
 /*mobile*/
 
-@media (max-width:450px) {
+@media (max-width:576px) {
 
     /*inicio*/
 
     /* portada */
 
 
-    .main >div h1 {
+    .div-h1-index h1 {
         font-size: 50px;
-     }
+    }
 
     /* seccion uno */
     .seccion-uno {
@@ -384,14 +365,10 @@ form {
 
     }
 
-    .seccion-uno img {
-        width: 300px;
-        height: 300px;
-
-    }
 
 
-    .seccion-uno p {
+
+    .p-index {
         font-size: 16px;
         margin: 10px;
         padding: 10px;
@@ -412,23 +389,9 @@ form {
         flex-direction: column;
     }
 
-    .seccion-dos img {
-        width: 350px;
-        height: 175px;
-        padding: 10px;
 
-    }
-
-    .mapa {
-        width: 350px;
-        height: 200px;
-        padding: 10PX;
-    }
-
-
-
- .footer{
-     flex-direction: column;
+    .footer {
+        flex-direction: column;
     }
 
 
@@ -444,34 +407,18 @@ form {
 
     /* portada */
 
-    .main-quienesSomos>div h1 {
+    .div-h1 h1 {
         font-size: 50px;
     }
 
     /* seccion quienes somos */
 
-    .seccion-quienesSomos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .seccion-quienesSomos>div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .seccion-quienesSomos>div img {
-        width: 300px;
-        height: 300px;
-        margin: 10px;
-        padding: 10px;
-    }
 
     .titulo {
         font-size: 22px;
     }
 
-    .seccion-quienesSomos div div {
+    .texto-quienesSomos {
 
         font-size: 16px;
         margin: 10px;
@@ -479,15 +426,15 @@ form {
 
     }
 
-    .footer{
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
+
+
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
 
 
     /* servicios */
@@ -516,15 +463,15 @@ form {
         font-size: 17px;
     }
 
-    .footer{
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
+
+
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
 
 
     /*galeria */
@@ -542,15 +489,6 @@ form {
     }
 
 
-    .imagen-galeria:nth-child(1) {
-
-        grid-row-start: span 1;
-    }
-
-    .imagen-galeria:nth-child(3) {
-        grid-row-start: span 1;
-    }
-
 
     .imagen-galeria:nth-child(5) {
         grid-column-start: span 1;
@@ -563,28 +501,28 @@ form {
     }
 
 
-    .footer{
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
 
 
-       /*contacto*/
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
 
-       .footer{
+
+    /*contacto*/
+
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
+
+
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
 
 }
 
@@ -592,7 +530,7 @@ form {
 
 /* tablet */
 
-@media (min-width: 451px) and (max-width :960px) {
+@media (min-width: 577px) and (max-width :992px) {
 
 
     /*inicio*/
@@ -600,25 +538,14 @@ form {
     /* portada */
 
 
-    .main >div h1 {
+    .div-h1-index h1 {
 
         font-size: 70px;
     }
 
     /* seccion uno */
-    .seccion-uno {
 
-        flex-direction: column;
-    }
-
-    .seccion-uno img {
-        width: 420px;
-        height: 420px;
-
-    }
-
-
-    .seccion-uno p {
+    .p-index {
         font-size: 22px;
         margin: 15px;
         padding: 15px;
@@ -638,28 +565,17 @@ form {
         flex-direction: column;
     }
 
-    .seccion-dos img {
-        width: 420px;
-        height: 250px;
-        padding: 15px;
+    /*footer*/
 
-    }
-
-    .mapa {
-        width: 445px;
-        height: 300px;
-        padding: 15px;
-    }
-
-    .footer{
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
+
+
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
 
 
     /* quienes somos */
@@ -667,34 +583,18 @@ form {
 
     /* portada */
 
-    .main-quienesSomos > div h1 {
+    .div-h1 h1 {
         font-size: 70px;
     }
 
     /* seccion quienes somos */
 
-    .seccion-quienesSomos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .seccion-quienesSomos>div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .seccion-quienesSomos>div img {
-        width: 420px;
-        height: 420px;
-        margin: 15px;
-        padding: 15px;
-    }
 
     .titulo {
         font-size: 22px;
     }
 
-    .seccion-quienesSomos div div {
+    .texto-quienesSomos {
 
         font-size: 18px;
         margin: 15px;
@@ -702,15 +602,17 @@ form {
 
     }
 
-    .footer{
+    /*footer*/
+
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
+
+
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
 
     /* servicios */
 
@@ -738,15 +640,15 @@ form {
         font-size: 20px;
     }
 
-    .footer{
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
+
+
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
 
 
     /*galeria */
@@ -784,26 +686,26 @@ form {
         grid-row-start: span 2;
     }
 
-    .footer{
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
 
-       /*contacto*/
 
-       .footer{
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
+
+    /*contacto*/
+
+    .footer {
         flex-direction: column;
-       }
-   
-   
-       .footer span {
-           margin: 10px;
-           font-size: 13px;
-       }
+    }
+
+
+    .footer span {
+        margin: 10px;
+        font-size: 13px;
+    }
 
 }

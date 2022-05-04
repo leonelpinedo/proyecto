@@ -15,6 +15,7 @@
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -28,68 +29,83 @@
 <body>
    <header class="header">
       <!--zona navegable-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark color-nav">
          <div class="container-fluid">
-           <a class="navbar-brand" href="index.html">
-            <img src="imagenes/logo2.jpg" alt="logo">
-           </a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-             <ul class="navbar-nav">
-               <li class="nav-item">
-                 <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="quienesSomos.html">¿QUIENES SOMOS?</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="servicios.html">SERVICIOS</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link " href="galeria.html">GALERIA</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link " href="contacto.html">CONTACTO</a>
-                </li>
-             </ul>
-           </div>
+            <a class="navbar-brand" href="index.html">
+               <img src="imagenes/logo2.jpg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="quienesSomos.html">¿QUIENES SOMOS?</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="galeria.html">GALERIA</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="contacto.html">CONTACTO</a>
+                  </li>
+               </ul>
+            </div>
          </div>
-       </nav>
+      </nav>
    </header>
 
-   <main class="main">
+   <main>
 
       <!--portada-->
-      <div>
+      <div class="div-h1-index">
          <h1 class="animate__animated animate__backInRight">La Barca Eventos</h1>
       </div>
 
       <!--sección uno-->
+      <section>
+         <div class="container">
+            <div class="row div-principal">
+               <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                  <img src="imagenes/pileta.jpg" alt="pileta" class="img-fluid">
+               </div>
+               <div class="col-lg-6 col-md-12 col-sm-12   d-flex  justify-content-center align-items-center ">
+                  <p class="p-index">Comenzamos a trabajar en nuestro nuevo espacio en Pilar....un lugar pensado y
+                     diseñado
+                     para hacer que el evento de tus sueños se haga realidad.
+                     Sabemos que no somos los únicos, pero sí tu mejor opción.
+                     Conoce todo lo que tenemos para ofrecerte!
 
-      <section class="seccion-uno">
-         <img src="imagenes/pileta.jpg" alt="pileta">
-         <p>Comenzamos a trabajar en nuestro nuevo espacio en Pilar....un lugar pensado y diseñado
-            para hacer que el evento de tus sueños se haga realidad.
-            Sabemos que no somos los únicos, pero sí tu mejor opción.
-            Conoce todo lo que tenemos para ofrecerte!
-
-         </p>
+                  </p>
+               </div>
+            </div>
+         </div>
       </section>
 
       <!--sección dos-->
 
       <section class="seccion-dos">
-         <div>
-            <h2 class="como-llegar">¿Como llegar?</h2>
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12  titulo-h2 d-flex justify-content-center align-items-center">
+               <h2 class="como-llegar">¿Como llegar?</h2>
+            </div>
          </div>
-         <div class="imagenes-como-llegar">
-            <img src="imagenes/mapa.jpg" alt="mapa">
-            <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.8530780471033!2d-58.946121885248544!3d-34.45587725719674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc838f36c8f97f%3A0x9205991a6441a0cf!2sLa%20Barca%20Multiespacio!5e0!3m2!1ses-419!2sar!4v1649014664230!5m2!1ses-419!2sar"
-               width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-               referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+         <div class="row">
+            <div class=" col-lg-6 col-md-12 col-sm-12 imagenes-como-llegar text-center ">
+               <img src="imagenes/mapa.jpg" alt="mapa" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mapa-nav">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.8530780471033!2d-58.946121885248544!3d-34.45587725719674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc838f36c8f97f%3A0x9205991a6441a0cf!2sLa%20Barca%20Multiespacio!5e0!3m2!1ses-419!2sar!4v1651633539393!5m2!1ses-419!2sar"
+                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
          </div>
       </section>
    </main>
