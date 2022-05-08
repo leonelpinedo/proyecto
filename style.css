@@ -5,7 +5,6 @@
 }
 
 /*index*/
-
 .color-nav {
     background-color: black;
     max-height: 110px;
@@ -198,27 +197,19 @@ h2 {
     color: black;
 }
 
-.main-servicios section {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-
-}
 
 
 .h3-parrafos {
     display: flex;
-    padding: 20px
+    padding: 20px;
+    justify-content: center;
 }
 
-.h3-parrafos h3 {
+.h3-p h3 {
     text-align: center;
-    margin: 20px;
     font-family: 'Poppins', sans-serif;
     color: black;
+    font-size: 22px;
 }
 
 
@@ -227,6 +218,7 @@ h2 {
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     color: black;
+    flex-direction: column;
 }
 
 
@@ -243,18 +235,12 @@ h2 {
 
 }
 
-.galeria-contenedor {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    padding: 20px;
-    grid-gap: 10px;
-
+.imagen-galeria {
+    height: 500px;
+    padding: 12px;
 }
 
-
-.imagen-galeria img {
+.imagen-galeria>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -270,14 +256,6 @@ h2 {
 }
 
 
-.imagen-galeria:nth-child(5) {
-    grid-column-start: span 2;
-}
-
-.imagen-galeria:nth-child(7) {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-}
 
 
 /*contacto*/
@@ -381,7 +359,6 @@ form {
     .seccion-dos>div h2 {
         font-size: 25px;
         padding: 15px;
-        color: white;
     }
 
 
@@ -389,6 +366,7 @@ form {
         flex-direction: column;
     }
 
+    /*footer*/
 
     .footer {
         flex-direction: column;
@@ -426,6 +404,8 @@ form {
 
     }
 
+    /*footer*/
+
     .footer {
         flex-direction: column;
     }
@@ -455,13 +435,15 @@ form {
     .h3-parrafos {
         display: flex;
         padding: 10px;
-        flex-direction: column;
         font-size: 16px;
+        margin: 10px;
     }
 
-    .h3-parrafos h3 {
+    .h3-p h3 {
         font-size: 17px;
     }
+
+    /*footer*/
 
     .footer {
         flex-direction: column;
@@ -481,25 +463,12 @@ form {
         font-size: 22px;
     }
 
-    .galeria-contenedor {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: 200px;
-        padding: 10px;
+    .color-nav {
+
+        max-height: none;
     }
 
-
-
-    .imagen-galeria:nth-child(5) {
-        grid-column-start: span 1;
-
-    }
-
-    .imagen-galeria:nth-child(7) {
-        grid-column-start: span 1;
-        grid-row-start: span 1;
-    }
-
+    /*footer*/
 
     .footer {
         flex-direction: column;
@@ -513,6 +482,8 @@ form {
 
 
     /*contacto*/
+
+    /*footer*/
 
     .footer {
         flex-direction: column;
@@ -614,6 +585,7 @@ form {
         font-size: 13px;
     }
 
+
     /* servicios */
 
     /* portada */
@@ -632,13 +604,15 @@ form {
     .h3-parrafos {
         display: flex;
         padding: 15px;
-        flex-direction: column;
         font-size: 18px;
+        margin: 12px;
     }
 
-    .h3-parrafos h3 {
+    .h3-p h3 {
         font-size: 20px;
     }
+
+    /*footer*/
 
     .footer {
         flex-direction: column;
@@ -649,6 +623,7 @@ form {
         margin: 10px;
         font-size: 13px;
     }
+
 
 
     /*galeria */
@@ -658,33 +633,12 @@ form {
         font-size: 25px;
     }
 
-    .galeria-contenedor {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 200px;
-        padding: 10px;
+    .color-nav {
+
+        max-height: none;
     }
 
-
-    .imagen-galeria:nth-child(1) {
-
-        grid-row-start: span 1;
-    }
-
-    .imagen-galeria:nth-child(3) {
-        grid-row-start: span 1;
-    }
-
-
-    .imagen-galeria:nth-child(5) {
-        grid-column-start: span 1;
-
-    }
-
-    .imagen-galeria:nth-child(7) {
-        grid-column-start: span 1;
-        grid-row-start: span 2;
-    }
+    /*footer*/
 
     .footer {
         flex-direction: column;
@@ -695,6 +649,8 @@ form {
         margin: 10px;
         font-size: 13px;
     }
+
+
 
     /*contacto*/
 
