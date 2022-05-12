@@ -1,0 +1,406 @@
+/*comun a todos los archivos*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  min-height: 100vh;
+}
+
+header .color-nav {
+  background-color: black;
+  max-height: 110px;
+}
+header .color-nav div a img {
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+}
+@media screen and (max-width: 576px) {
+  header .color-nav {
+    max-height: none;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  header .color-nav {
+    max-height: none;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  background-color: #789395;
+}
+footer span {
+  margin: 40px;
+}
+footer div nav a img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 576px) {
+  footer span {
+    margin: 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  footer span {
+    margin: 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+/*index*/
+/*portada*/
+.div-h1-index {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/salon-adentro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-h1-index h1 {
+  font-size: 100px;
+  font-family: "Great Vibes", cursive;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  .div-h1-index h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .div-h1-index h1 {
+    font-size: 70px;
+  }
+}
+
+/*seccion uno*/
+section div .div-principal {
+  padding: 40px;
+}
+section div .div-principal div .p-index {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  section div .div-principal div .p-index {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  section div .div-principal div .p-index {
+    font-size: 22px;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+/*seccion dos*/
+.seccion-dos div div .como-llegar {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  padding: 30px;
+  color: white;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .seccion-dos div div .como-llegar {
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-dos div div .como-llegar {
+    font-size: 30px;
+    padding: 25px;
+  }
+}
+.seccion-dos div .imagenes-como-llegar {
+  padding: 20px;
+}
+.seccion-dos div .mapa-nav {
+  padding: 20px;
+}
+/*quines somos*/
+/*portada*/
+.div-h1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/frente-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-h1 h1 {
+  font-size: 100px;
+  font-family: "Great Vibes", cursive;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  .div-h1 h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .div-h1 h1 {
+    font-size: 70px;
+  }
+}
+
+/*seccion uno*/
+section .div-quienesSomos {
+  display: flex;
+  align-items: center;
+}
+section .div-quienesSomos .titulo-texto {
+  flex-direction: column;
+}
+section .div-quienesSomos .titulo-texto .titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  section .div-quienesSomos .titulo-texto .titulo {
+    font-size: 22px;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  section .div-quienesSomos .titulo-texto .titulo {
+    font-size: 22px;
+    padding: 30px;
+  }
+}
+section .div-quienesSomos .titulo-texto .texto-quienesSomos {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: black;
+  padding: 20px;
+}
+@media screen and (max-width: 576px) {
+  section .div-quienesSomos .titulo-texto .texto-quienesSomos {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  section .div-quienesSomos .titulo-texto .texto-quienesSomos {
+    font-size: 18px;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+section .div-quienesSomos .div-imagen-mesa {
+  padding: 40px;
+}
+/*servicios*/
+/*portada*/
+.div-h1-servicios {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/mesa1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-h1-servicios h1 {
+  font-size: 100px;
+  font-family: "Great Vibes", cursive;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  .div-h1-servicios h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .div-h1-servicios h1 {
+    font-size: 70px;
+  }
+}
+
+/*seccion*/
+section div div .servicios-h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  section div div .servicios-h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  section div div .servicios-h2 {
+    font-size: 25px;
+  }
+}
+section div .h3-parrafos {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  section div .h3-parrafos {
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  section div .h3-parrafos {
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    margin: 12px;
+  }
+}
+section div .h3-parrafos .h3-p {
+  margin: 20px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  flex-direction: column;
+}
+section div .h3-parrafos .h3-p h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 22px;
+}
+@media screen and (max-width: 576px) {
+  section div .h3-parrafos .h3-p h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  section div .h3-parrafos .h3-p h3 {
+    font-size: 20px;
+  }
+}
+
+/*galeria*/
+.galeria-h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .galeria-h2 {
+    padding: 10px;
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .galeria-h2 {
+    padding: 10px;
+    font-size: 25px;
+  }
+}
+
+.carousel-item {
+  max-height: 40em;
+}
+
+.galeria-contenedor div .imagen-galeria {
+  height: 500px;
+  padding: 12px;
+}
+.galeria-contenedor div .imagen-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+  box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+}
+
+/*contacto*/
+section {
+  padding: 140px;
+}
+section .form {
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: auto;
+}
+section .form .form-container {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-auto-columns: 100%;
+}
+section .form .form-container .form-title {
+  text-align: center;
+  font-size: 20px;
+}
+section .form .form-container .form-imput {
+  font-family: inherit;
+  font-size: 20px;
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+  border: 1px solid #bbb0b0;
+  border-radius: 10px;
+}
+section .form .form-container .form-imput--message {
+  resize: none;
+  padding: 18px 10px;
+  margin-bottom: 5px;
+}
+section .form .form-container .form-cta {
+  font-family: inherit;
+  font-size: 25px;
+  background-color: #8946A6;
+  color: white;
+  border: none;
+  font-weight: 400;
+  padding: 7px o;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

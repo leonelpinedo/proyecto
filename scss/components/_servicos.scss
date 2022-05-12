@@ -1,0 +1,110 @@
+@import '../base/variables';
+
+/*portada*/
+.div-h1-servicios {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/mesa1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: $font-size-h1;
+        font-family: $font-family-h1;
+        color: $color-h1;
+
+        @media screen and (max-width:576px) {
+            font-size: 50px;
+        }
+
+        @media screen and (min-width: 577px) and (max-width :992px) {
+            font-size: 70px;
+        }
+    }
+}
+
+/*seccion*/
+
+section {
+    div {
+        div {
+            .servicios-h2 {
+                padding: 20px;
+                text-align: center;
+                font-size: $font-size-h2;
+                font-family: $font-family-general;
+                color: black;
+
+                @media screen and (max-width:576px) {
+                    font-size: 22px;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px) {
+                    font-size: 25px;
+                }
+
+            }
+        }
+
+        .h3-parrafos {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+
+            @media screen and (max-width:576px) {
+                display: flex;
+                padding: 10px;
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            @media screen and (min-width: 577px) and (max-width :992px) {
+                display: flex;
+                padding: 15px;
+                font-size: 18px;
+                margin: 12px;
+            }
+
+            .h3-p {
+                margin: 20px;
+                padding: 20px;
+                font-family: $font-family-general;
+                color: black;
+                flex-direction: column;
+
+                h3 {
+                    text-align: center;
+                    font-family: $font-family-general;
+                    color: black;
+                    font-size: 22px;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 17px;
+                    }
+
+                    @media screen and (min-width: 577px) and (max-width :992px) {
+                        font-size: 20px;
+                    }
+
+                }
+
+            }
+
+
+
+
+        }
+
+
+
+    }
+
+
+
+}

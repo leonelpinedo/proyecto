@@ -1,0 +1,34 @@
+
+/*comun a todos los archivos*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import '../scss/components/body';
+@import '../scss/components/header';
+@import '../scss/components/footer';
+
+/*index*/
+
+@import '../scss/components/index.scss';
+
+/*quines somos*/
+
+@import '../scss/components/quines-somos';
+
+/*servicios*/
+
+@import '../scss/components/servicos';
+
+/*galeria*/
+
+@import '../scss/components/galeria';
+
+/*contacto*/
+
+@import '../scss/components/contacto';
+
+
+

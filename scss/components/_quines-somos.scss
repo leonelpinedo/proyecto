@@ -1,0 +1,87 @@
+@import '../base/variables';
+
+/*portada*/
+.div-h1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/frente-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: $font-size-h1;
+        font-family: $font-family-h1;
+        color: $color-h1;
+
+        @media screen and (max-width:576px) {
+            font-size: 50px;
+        }
+
+        @media screen and (min-width: 577px) and (max-width :992px) {
+            font-size: 70px;
+        }
+    }
+}
+
+/*seccion uno*/
+
+section {
+    .div-quienesSomos {
+        display: flex;
+        align-items: center;
+
+        .titulo-texto {
+            flex-direction: column;
+
+            .titulo {
+                font-family: $font-family-general;
+                font-size: $font-size-h2;
+                color: black;
+
+
+                @media screen and (max-width:576px) {
+                    font-size: 22px;
+                    padding: 20px;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px) {
+                    font-size: 22px;
+                    padding: 30px;
+                }
+            }
+
+            .texto-quienesSomos {
+                font-family: $font-family-general;
+                font-size: 25px;
+                color: black;
+                padding: 20px;
+
+
+                @media screen and (max-width:576px) {
+                    font-size: 16px;
+                    margin: 10px;
+                    padding: 10px;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px) {
+                    font-size: 18px;
+                    margin: 15px;
+                    padding: 15px;
+                }
+            }
+        }
+
+        .div-imagen-mesa {
+            padding: 40px;
+
+            img {}
+        }
+    }
+
+}

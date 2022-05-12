@@ -1,0 +1,48 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    background-color: #789395;
+
+    span {
+        margin: 40px;
+    }
+
+    div {
+        nav {
+            a {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            a {
+                img {}
+            }
+        }
+    }
+
+    span {
+        @media screen and (max-width:576px) {
+            margin: 10px;
+            font-size: 13px;
+        }
+
+        @media screen and (min-width: 577px) and (max-width :992px) {
+            margin: 10px;
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 577px) and (max-width :992px) {
+        flex-direction: column;
+    }
+
+
+}

@@ -1,0 +1,44 @@
+@import '../base/variables';
+
+.galeria-h2 {
+    font-family: $font-family-general;
+    font-size: $font-size-h2;
+    text-align: center;
+    padding: 20px;
+    color: black;
+
+    @media screen and (max-width:576px) {
+        padding: 10px;
+        font-size: 22px;
+    }
+
+    @media screen and (min-width:577px) and (max-width :992px) {
+        padding: 10px;
+        font-size: 25px;
+    }
+}
+
+.carousel-item {
+    max-height: 40em;   
+}
+
+.galeria-contenedor {
+    div {
+        .imagen-galeria {
+            height: 500px;
+            padding: 12px;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+                -webkit-box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+                -moz-box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+                box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+
+            }
+        }
+    }
+}

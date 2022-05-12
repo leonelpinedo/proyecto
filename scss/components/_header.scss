@@ -1,0 +1,27 @@
+header {
+    .color-nav {
+        background-color: black;
+        max-height: 110px;
+
+        div {
+            a {
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin: 40px;
+                }
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            max-height: none;
+        }
+
+        @media screen and (min-width: 577px) and (max-width :992px) {
+            max-height: none;
+        }
+
+
+
+    }
+}
