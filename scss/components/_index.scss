@@ -1,37 +1,35 @@
 @import '../base/variables';
+@import '../base/extends';
+
+/*--------------------index--------------------*/
 
 /*portada*/
-.div-h1-index {
-    width: 100%;
-    height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/salon-adentro.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 
+    .div-h1-index {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/salon-adentro.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
 
+        @extend %flex;
 
+        h1 {
+            font-size: $font-size-h1;
+            font-family: $font-family-h1;
+            color: $color-h1;
 
+            @media screen and (max-width:576px) {
+                font-size: 50px;
+            }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-        font-size: $font-size-h1;
-        font-family: $font-family-h1;
-        color: $color-h1;
-
-        @media screen and (max-width:576px) {
-            font-size: 50px;
-        }
-
-        @media screen and (min-width: 577px) and (max-width :992px) {
-            font-size: 70px;
+            @media screen and (min-width: 577px) and (max-width :992px) {
+                font-size: 70px;
+            }
         }
     }
-}
 
 
 /*seccion uno*/

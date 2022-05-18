@@ -1,4 +1,7 @@
 @import '../base/variables';
+@import '../base/extends';
+
+/*--------------------quienes somos-------------------*/
 
 /*portada*/
 .div-h1 {
@@ -9,10 +12,8 @@
     background-size: cover;
     background-attachment: fixed;
 
+    @extend %flex;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     h1 {
         font-size: $font-size-h1;
@@ -33,9 +34,7 @@
 
 section {
     .div-quienesSomos {
-        display: flex;
-        align-items: center;
-
+       
         .titulo-texto {
             flex-direction: column;
 

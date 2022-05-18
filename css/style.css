@@ -4,11 +4,13 @@
   margin: 0;
 }
 
+/*--------------------body--------------------*/
 body {
   background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
   min-height: 100vh;
 }
 
+/*--------------------header--------------------*/
 header .color-nav {
   background-color: black;
   max-height: 110px;
@@ -29,6 +31,7 @@ header .color-nav div a img {
   }
 }
 
+/*--------------------footer-------------------*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -66,7 +69,14 @@ footer div nav a img {
   }
 }
 
-/*index*/
+/*--------------------index--------------------*/
+.div-h1-servicios, .div-h1, .div-h1-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /*portada*/
 .div-h1-index {
   width: 100%;
@@ -76,9 +86,6 @@ footer div nav a img {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .div-h1-index h1 {
   font-size: 100px;
@@ -148,6 +155,13 @@ section div .div-principal div .p-index {
   padding: 20px;
 }
 /*quines somos*/
+.div-h1-servicios, .div-h1, .div-h1-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------quienes somos-------------------*/
 /*portada*/
 .div-h1 {
   width: 100%;
@@ -156,9 +170,6 @@ section div .div-principal div .p-index {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .div-h1 h1 {
   font-size: 100px;
@@ -177,10 +188,6 @@ section div .div-principal div .p-index {
 }
 
 /*seccion uno*/
-section .div-quienesSomos {
-  display: flex;
-  align-items: center;
-}
 section .div-quienesSomos .titulo-texto {
   flex-direction: column;
 }
@@ -225,6 +232,13 @@ section .div-quienesSomos .div-imagen-mesa {
   padding: 40px;
 }
 /*servicios*/
+.div-h1-servicios, .div-h1-index, .div-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------servicios--------------------*/
 /*portada*/
 .div-h1-servicios {
   width: 100%;
@@ -234,9 +248,6 @@ section .div-quienesSomos .div-imagen-mesa {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .div-h1-servicios h1 {
   font-size: 100px;
@@ -273,8 +284,6 @@ section div div .servicios-h2 {
   }
 }
 section div .h3-parrafos {
-  display: flex;
-  padding: 20px;
   justify-content: center;
 }
 @media screen and (max-width: 576px) {
@@ -318,6 +327,7 @@ section div .h3-parrafos .h3-p h3 {
 }
 
 /*galeria*/
+/*--------------------galeria--------------------*/
 .galeria-h2 {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -356,8 +366,11 @@ section div .h3-parrafos .h3-p h3 {
 }
 
 /*contacto*/
+/*--------------------contacto--------------------*/
 section {
-  padding: 140px;
+  padding: 40px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 section .form {
   background-color: white;

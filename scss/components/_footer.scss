@@ -1,7 +1,9 @@
+@import '../base/mixin';
+
+/*--------------------footer-------------------*/
+
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, space-between, center);
     height: 110px;
     background-color: #789395;
 

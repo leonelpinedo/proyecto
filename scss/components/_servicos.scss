@@ -1,4 +1,8 @@
 @import '../base/variables';
+@import '../base/extends';
+@import '../base/mapas';
+
+/*--------------------servicios--------------------*/
 
 /*portada*/
 .div-h1-servicios {
@@ -10,9 +14,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
+
 
     h1 {
         font-size: $font-size-h1;
@@ -53,9 +56,7 @@ section {
         }
 
         .h3-parrafos {
-            display: flex;
-            padding: 20px;
-            justify-content: center;
+            justify-content:center;
 
             @media screen and (max-width:576px) {
                 display: flex;
@@ -72,11 +73,11 @@ section {
             }
 
             .h3-p {
-                margin: 20px;
-                padding: 20px;
+                margin:map-get($h3-parrafos, p-margin );
+                padding:map-get($h3-parrafos, p-paddin);
                 font-family: $font-family-general;
-                color: black;
-                flex-direction: column;
+                color:map-get($h3-parrafos, p-color ) ;
+                flex-direction:map-get($h3-parrafos, p-direccion );
 
                 h3 {
                     text-align: center;
