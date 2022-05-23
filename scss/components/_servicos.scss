@@ -16,20 +16,54 @@
 
     @extend %flex;
 
+    .portada {
+        display: flex;
+        justify-content: center;
 
-    h1 {
-        font-size: $font-size-h1;
-        font-family: $font-family-h1;
-        color: $color-h1;
+        div {
+            width: 95%;
 
-        @media screen and (max-width:576px) {
-            font-size: 50px;
-        }
+            div {
 
-        @media screen and (min-width: 577px) and (max-width :992px) {
-            font-size: 70px;
+                h1 {
+                    font-size: $font-size-h1;
+                    font-family: $font-family-h1;
+                    color: $color-h1;
+                    text-align: center;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 50px;
+                    }
+
+                    @media screen and (min-width: 577px) and (max-width :992px) {
+                        font-size: 70px;
+                    }
+                }
+            }
+
+            .div-whatsapp {
+
+                .btn-wsp {
+
+                    .whatsapp {
+                        width: 50px;
+                        height: 50px;
+                        position: fixed;
+
+                        @media screen and (max-width:576px) {
+                            width: 40px;
+                            height: 40px;
+
+                        }
+                    }
+                }
+
+                text-align: end;
+
+            }
         }
     }
+
 }
 
 /*seccion*/
@@ -56,7 +90,7 @@ section {
         }
 
         .h3-parrafos {
-            justify-content:center;
+            justify-content: center;
 
             @media screen and (max-width:576px) {
                 display: flex;
@@ -73,16 +107,15 @@ section {
             }
 
             .h3-p {
-                margin:map-get($h3-parrafos, p-margin );
-                padding:map-get($h3-parrafos, p-paddin);
+                margin: map-get($h3-parrafos, p-margin);
+                padding: map-get($h3-parrafos, p-paddin);
                 font-family: $font-family-general;
-                color:map-get($h3-parrafos, p-color ) ;
-                flex-direction:map-get($h3-parrafos, p-direccion );
-
+                color: map-get($h3-parrafos, p-color);
+                flex-direction: map-get($h3-parrafos, p-direccion);
+               
                 h3 {
                     text-align: center;
                     font-family: $font-family-general;
-                    color: black;
                     font-size: 22px;
 
                     @media screen and (max-width:576px) {
@@ -93,8 +126,13 @@ section {
                         font-size: 20px;
                     }
 
+                    color: black;
                 }
-
+                
+                p{
+                    color: black;
+                }
+                
             }
 
 
@@ -108,4 +146,51 @@ section {
 
 
 
+}
+
+/*seccion 2*/
+
+.seccion-2-servicios {
+    .dibujo {
+        div {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 50px;
+
+                @media screen and (max-width:576px) {
+                    display: none;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px) {
+                    display: none;
+                }
+
+            }
+        }
+
+
+    }
+
+    .textos-2 {
+        div {
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            h3 {
+                text-align: center;
+                padding-top: 50px;
+
+            }
+
+            p {
+                text-align: center;
+                padding: 50px;
+            }
+        }
+    }
 }

@@ -14,27 +14,62 @@
 
     @extend %flex;
 
+    .portada {
+        display: flex;
+        justify-content: center;
 
-    h1 {
-        font-size: $font-size-h1;
-        font-family: $font-family-h1;
-        color: $color-h1;
+        div {
+            width: 95%;
 
-        @media screen and (max-width:576px) {
-            font-size: 50px;
-        }
+            div {
 
-        @media screen and (min-width: 577px) and (max-width :992px) {
-            font-size: 70px;
+                h1 {
+                    font-size: $font-size-h1;
+                    font-family: $font-family-h1;
+                    color: $color-h1;
+                    text-align: center;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 50px;
+                    }
+
+                    @media screen and (min-width: 577px) and (max-width :992px) {
+                        font-size: 70px;
+                    }
+                }
+            }
+
+            .div-whatsapp {
+
+                .btn-wsp {
+
+                    .whatsapp {
+                        width: 50px;
+                        height: 50px;
+                        position: fixed;
+
+                        @media screen and (max-width:576px) {
+                            width: 40px;
+                            height: 40px;
+
+                        }
+                    }
+                }
+
+                text-align: end;
+
+            }
         }
     }
+
+
 }
 
 /*seccion uno*/
 
 section {
     .div-quienesSomos {
-       
+
         .titulo-texto {
             flex-direction: column;
 
@@ -83,4 +118,87 @@ section {
         }
     }
 
+}
+
+/*sección dos*/
+
+section {
+
+    div {
+
+        .sociales-corporativos {
+            @extend %flex;
+            flex-direction: column;
+
+            h3 {
+                font-family: $font-family-general;
+                font-size: 30px;
+                color: white;
+                padding-top:0px;
+                
+
+                @media screen and (max-width:576px) {
+                    font-size: 22px;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px){
+                    font-size: 22px;
+                }
+            }
+
+            p {
+                font-family: $font-family-general;
+                font-size: 20px;
+                color: white;
+                padding-top: 30px;
+
+                @media screen and (max-width:576px) {
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px){
+                    font-size: 16px;
+                }
+            }
+        }
+
+
+    }
+
+    div {
+
+        .descripcion {
+            @extend %flex;
+            flex-direction: column;
+            padding: 30px;
+            color: white;
+            font-family: $font-family-general;
+
+
+            h4 {
+
+                font-size: 25px;
+
+                @media screen and (max-width:576px) {
+                    font-size: 20px;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px){
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+
+                @media screen and (max-width:576px) {
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px){
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
