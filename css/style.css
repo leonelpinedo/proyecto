@@ -71,7 +71,7 @@ footer div nav a img {
 }
 
 /*index*/
-.div-h1-servicios, section div .descripcion, section div .sociales-corporativos, .div-h1, .div-h1-index {
+.div-h1-servicios, .seccion-2-quienesSomos div .descripcion, .seccion-2-quienesSomos div .sociales-corporativos, .div-h1, .div-h1-index {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,24 +127,33 @@ footer div nav a img {
 }
 
 /*seccion uno*/
-section div .div-principal {
+.seccion-uno {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.seccion-uno .seccion-uno .div-principal {
   padding: 40px;
 }
-section div .div-principal div .p-index {
+.seccion-uno .seccion-uno .div-principal div img {
+  -webkit-box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+  -moz-box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+  box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+}
+.seccion-uno .seccion-uno .div-principal div .p-index {
   padding: 20px;
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   color: black;
 }
 @media screen and (max-width: 576px) {
-  section div .div-principal div .p-index {
+  .seccion-uno .seccion-uno .div-principal div .p-index {
     font-size: 16px;
     margin: 10px;
     padding: 10px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section div .div-principal div .p-index {
+  .seccion-uno .seccion-uno .div-principal div .p-index {
     font-size: 22px;
     margin: 15px;
     padding: 15px;
@@ -152,11 +161,16 @@ section div .div-principal div .p-index {
 }
 
 /*seccion dos*/
-.seccion-dos div div {
+.seccion-dos {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: none;
+}
+.seccion-dos .seccion-2-titulo div {
   display: flex;
   flex-direction: column;
 }
-.seccion-dos div div .como-llegar {
+.seccion-dos .seccion-2-titulo div .como-llegar {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   padding: 30px;
@@ -164,30 +178,30 @@ section div .div-principal div .p-index {
   justify-content: center;
 }
 @media screen and (max-width: 576px) {
-  .seccion-dos div div .como-llegar {
+  .seccion-dos .seccion-2-titulo div .como-llegar {
     font-size: 25px;
     padding: 15px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .seccion-dos div div .como-llegar {
+  .seccion-dos .seccion-2-titulo div .como-llegar {
     font-size: 30px;
     padding: 25px;
   }
 }
-.seccion-dos div div .ubicacion {
+.seccion-dos .seccion-2-titulo div .ubicacion {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: white;
   padding: 20px;
 }
 @media screen and (max-width: 576px) {
-  .seccion-dos div div .ubicacion {
+  .seccion-dos .seccion-2-titulo div .ubicacion {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .seccion-dos div div .ubicacion {
+  .seccion-dos .seccion-2-titulo div .ubicacion {
     font-size: 16px;
   }
 }
@@ -198,7 +212,7 @@ section div .div-principal div .p-index {
   padding: 20px;
 }
 /*quines somos*/
-.div-h1-servicios, section div .descripcion, section div .sociales-corporativos, .div-h1, .div-h1-index {
+.div-h1-servicios, .seccion-2-quienesSomos div .descripcion, .seccion-2-quienesSomos div .sociales-corporativos, .div-h1, .div-h1-index {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,120 +267,138 @@ section div .div-principal div .p-index {
 }
 
 /*seccion uno*/
-section .div-quienesSomos .titulo-texto {
+.seccion-1-quienesSomos {
+  padding-top: 20px;
+  padding: 20px;
+}
+.seccion-1-quienesSomos .div-quienesSomos .titulo-texto {
   flex-direction: column;
 }
-section .div-quienesSomos .titulo-texto .titulo {
+.seccion-1-quienesSomos .div-quienesSomos .titulo-texto .titulo {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   color: black;
 }
 @media screen and (max-width: 576px) {
-  section .div-quienesSomos .titulo-texto .titulo {
+  .seccion-1-quienesSomos .div-quienesSomos .titulo-texto .titulo {
     font-size: 22px;
     padding: 20px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section .div-quienesSomos .titulo-texto .titulo {
+  .seccion-1-quienesSomos .div-quienesSomos .titulo-texto .titulo {
     font-size: 22px;
     padding: 30px;
   }
 }
-section .div-quienesSomos .titulo-texto .texto-quienesSomos {
+.seccion-1-quienesSomos .div-quienesSomos .titulo-texto .texto-quienesSomos {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   color: black;
   padding: 20px;
 }
 @media screen and (max-width: 576px) {
-  section .div-quienesSomos .titulo-texto .texto-quienesSomos {
+  .seccion-1-quienesSomos .div-quienesSomos .titulo-texto .texto-quienesSomos {
     font-size: 16px;
     margin: 10px;
     padding: 10px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section .div-quienesSomos .titulo-texto .texto-quienesSomos {
+  .seccion-1-quienesSomos .div-quienesSomos .titulo-texto .texto-quienesSomos {
     font-size: 18px;
     margin: 15px;
     padding: 15px;
   }
 }
-section .div-quienesSomos .div-imagen-mesa {
+.seccion-1-quienesSomos .div-quienesSomos .div-imagen-mesa {
   padding: 40px;
 }
+.seccion-1-quienesSomos .div-quienesSomos .div-imagen-mesa img {
+  -webkit-box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+  -moz-box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+  box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+}
+
 /*sección dos*/
-section div .sociales-corporativos {
+.seccion-2-quienesSomos {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.seccion-2-quienesSomos div .sociales-corporativos {
   flex-direction: column;
 }
-section div .sociales-corporativos h3 {
+.seccion-2-quienesSomos div .sociales-corporativos h3 {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   color: white;
-  padding-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 576px) {
-  section div .sociales-corporativos h3 {
+  .seccion-2-quienesSomos div .sociales-corporativos h3 {
     font-size: 22px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section div .sociales-corporativos h3 {
+  .seccion-2-quienesSomos div .sociales-corporativos h3 {
     font-size: 22px;
   }
 }
-section div .sociales-corporativos p {
+.seccion-2-quienesSomos div .sociales-corporativos p {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: white;
   padding-top: 30px;
 }
 @media screen and (max-width: 576px) {
-  section div .sociales-corporativos p {
+  .seccion-2-quienesSomos div .sociales-corporativos p {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section div .sociales-corporativos p {
+  .seccion-2-quienesSomos div .sociales-corporativos p {
     font-size: 16px;
   }
 }
-section div .descripcion {
+.seccion-2-quienesSomos div .descripcion {
   flex-direction: column;
   padding: 30px;
   color: white;
   font-family: "Poppins", sans-serif;
 }
-section div .descripcion h4 {
+.seccion-2-quienesSomos div .descripcion h4 {
   font-size: 25px;
+  padding: 30px;
 }
 @media screen and (max-width: 576px) {
-  section div .descripcion h4 {
+  .seccion-2-quienesSomos div .descripcion h4 {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section div .descripcion h4 {
+  .seccion-2-quienesSomos div .descripcion h4 {
     font-size: 20px;
   }
 }
-section div .descripcion p {
+.seccion-2-quienesSomos div .descripcion p {
   font-size: 20px;
 }
 @media screen and (max-width: 576px) {
-  section div .descripcion p {
+  .seccion-2-quienesSomos div .descripcion p {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section div .descripcion p {
+  .seccion-2-quienesSomos div .descripcion p {
     font-size: 16px;
   }
 }
 
 /*servicios*/
-.div-h1-servicios, .div-h1-index, .div-h1, section div .sociales-corporativos, section div .descripcion {
+.div-h1-servicios, .div-h1-index, .div-h1, .seccion-2-quienesSomos div .sociales-corporativos, .seccion-2-quienesSomos div .descripcion {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,8 +453,12 @@ section div .descripcion p {
   }
 }
 
-/*seccion*/
-section div div .servicios-h2 {
+/*seccion 1*/
+.seccion-1-servicios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.seccion-1-servicios div div .servicios-h2 {
   padding: 20px;
   text-align: center;
   font-size: 40px;
@@ -430,20 +466,20 @@ section div div .servicios-h2 {
   color: black;
 }
 @media screen and (max-width: 576px) {
-  section div div .servicios-h2 {
+  .seccion-1-servicios div div .servicios-h2 {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section div div .servicios-h2 {
+  .seccion-1-servicios div div .servicios-h2 {
     font-size: 25px;
   }
 }
-section div .h3-parrafos {
+.seccion-1-servicios div .h3-parrafos {
   justify-content: center;
 }
 @media screen and (max-width: 576px) {
-  section div .h3-parrafos {
+  .seccion-1-servicios div .h3-parrafos {
     display: flex;
     padding: 10px;
     font-size: 16px;
@@ -451,41 +487,45 @@ section div .h3-parrafos {
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section div .h3-parrafos {
+  .seccion-1-servicios div .h3-parrafos {
     display: flex;
     padding: 15px;
     font-size: 18px;
     margin: 12px;
   }
 }
-section div .h3-parrafos .h3-p {
+.seccion-1-servicios div .h3-parrafos .h3-p {
   margin: 20px;
   padding: 20px;
   font-family: "Poppins", sans-serif;
   color: black;
   flex-direction: column;
 }
-section div .h3-parrafos .h3-p h3 {
+.seccion-1-servicios div .h3-parrafos .h3-p h3 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   color: black;
 }
 @media screen and (max-width: 576px) {
-  section div .h3-parrafos .h3-p h3 {
+  .seccion-1-servicios div .h3-parrafos .h3-p h3 {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  section div .h3-parrafos .h3-p h3 {
+  .seccion-1-servicios div .h3-parrafos .h3-p h3 {
     font-size: 20px;
   }
 }
-section div .h3-parrafos .h3-p p {
+.seccion-1-servicios div .h3-parrafos .h3-p p {
   color: black;
 }
 
 /*seccion 2*/
+.seccion-2-servicios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .seccion-2-servicios .dibujo div {
   display: flex;
   justify-content: center;
@@ -513,6 +553,17 @@ section div .h3-parrafos .h3-p p {
 .seccion-2-servicios .textos-2 div h3 {
   text-align: center;
   padding-top: 50px;
+  font-size: 22px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-2-servicios .textos-2 div h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-2-servicios .textos-2 div h3 {
+    font-size: 20px;
+  }
 }
 .seccion-2-servicios .textos-2 div p {
   text-align: center;

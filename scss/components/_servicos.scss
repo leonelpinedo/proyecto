@@ -66,9 +66,11 @@
 
 }
 
-/*seccion*/
+/*seccion 1*/
 
-section {
+.seccion-1-servicios {
+    padding-top: 20px;
+    padding-bottom: 20px;
     div {
         div {
             .servicios-h2 {
@@ -151,6 +153,8 @@ section {
 /*seccion 2*/
 
 .seccion-2-servicios {
+    padding-top: 20px;
+    padding-bottom: 20px;
     .dibujo {
         div {
             display: flex;
@@ -184,6 +188,15 @@ section {
             h3 {
                 text-align: center;
                 padding-top: 50px;
+                font-size: 22px;
+
+                @media screen and (max-width:576px) {
+                    font-size: 17px;
+                }
+
+                @media screen and (min-width: 577px) and (max-width :992px) {
+                    font-size: 20px;
+                }
 
             }
 

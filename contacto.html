@@ -24,8 +24,8 @@
 
     <meta property:'og:type' content="wep site">
     <meta property:'og:title' content="La Barca Eventos / salon de fiestas Pilar">
-    <meta property:'og:url' content="">
-    <meta property:'og:image' content="">
+    <meta property:'og:url' content="http://labarcaeventos.great-site.net/index.html">
+    <meta property:'og:image' content="http://labarcaeventos.great-site.net/imagenes/logo2.jpg">
     <meta property:'og:descrition'
         content="La Barca Eventos es un lugar pensado y diseñado para que puedas hacer realidad el evento de tus sueño. Disponemos amplio espacio verde con piscina como así también un salón totalmente equipado y armonioso.">
 
@@ -91,13 +91,17 @@
     <!--formulario-->
 
     <section class="section">
-        <form class="form">
+        <form  action="form.php" method="post" class="form">
 
             <div class="form-container">
+
                 <h2 class="form-title">Contacto</h2>
-                <input type="text" class="form-imput" placeholder="Nombre">
-                <input type="text" class="form-imput" placeholder="Email">
-                <textarea class="form-imput  form-imput--message" placeholder="Mensaje"></textarea>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" class="form-imput" placeholder="Nombre">
+                <label for="mail"></label>
+                <input type="text" id="mail" name="mail" class="form-imput" placeholder="Email">
+                <label for="mensaje"></label>
+                <textarea id="mensaje" name="mensaje" class="form-imput  form-imput--message" placeholder="Mensaje"></textarea>
 
                 <input type="submit" value="Enviar" class="form-cta">
 
