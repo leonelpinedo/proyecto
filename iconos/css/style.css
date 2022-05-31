@@ -1,0 +1,663 @@
+@charset "UTF-8";
+/*comun a todos los archivos*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*--------------------body--------------------*/
+body {
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  min-height: 100vh;
+}
+
+/*--------------------header--------------------*/
+header .color-nav {
+  background-color: black;
+  max-height: 110px;
+}
+header .color-nav div a img {
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+}
+@media screen and (max-width: 576px) {
+  header .color-nav {
+    max-height: none;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  header .color-nav {
+    max-height: none;
+  }
+}
+
+/*--------------------footer-------------------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  background-color: #789395;
+}
+footer span {
+  margin: 40px;
+}
+footer div nav a img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 576px) {
+  footer span {
+    margin: 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  footer span {
+    margin: 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+/*index*/
+.div-h1-servicios, .seccion-2-quienesSomos div .descripcion, .seccion-2-quienesSomos div .sociales-corporativos, .div-h1, .div-h1-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------index--------------------*/
+/*portada*/
+.div-h1-index {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/salon-adentro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.div-h1-index .portada {
+  display: flex;
+  justify-content: center;
+}
+.div-h1-index .portada div {
+  width: 95%;
+}
+.div-h1-index .portada div div h1 {
+  font-size: 100px;
+  font-family: "Great Vibes", cursive;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .div-h1-index .portada div div h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .div-h1-index .portada div div h1 {
+    font-size: 70px;
+  }
+}
+.div-h1-index .portada div .div-whatsapp {
+  text-align: end;
+}
+.div-h1-index .portada div .div-whatsapp .btn-wsp .whatsapp {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
+@media screen and (max-width: 576px) {
+  .div-h1-index .portada div .div-whatsapp .btn-wsp .whatsapp {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*seccion uno*/
+.seccion-uno {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.seccion-uno .seccion-uno .div-principal {
+  padding: 40px;
+}
+.seccion-uno .seccion-uno .div-principal div img {
+  -webkit-box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+  -moz-box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+  box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+}
+.seccion-uno .seccion-uno .div-principal div .p-index {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .seccion-uno .seccion-uno .div-principal div .p-index {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-uno .seccion-uno .div-principal div .p-index {
+    font-size: 22px;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+/*seccion dos*/
+.seccion-dos {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: none;
+}
+.seccion-dos .seccion-2-titulo div {
+  display: flex;
+  flex-direction: column;
+}
+.seccion-dos .seccion-2-titulo div .como-llegar {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  padding: 30px;
+  color: white;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .seccion-dos .seccion-2-titulo div .como-llegar {
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-dos .seccion-2-titulo div .como-llegar {
+    font-size: 30px;
+    padding: 25px;
+  }
+}
+.seccion-dos .seccion-2-titulo div .ubicacion {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-dos .seccion-2-titulo div .ubicacion {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-dos .seccion-2-titulo div .ubicacion {
+    font-size: 16px;
+  }
+}
+.seccion-dos div .imagenes-como-llegar {
+  padding: 20px;
+}
+.seccion-dos div .mapa-nav {
+  padding: 20px;
+}
+/*quines somos*/
+.div-h1-servicios, .seccion-2-quienesSomos div .descripcion, .seccion-2-quienesSomos div .sociales-corporativos, .div-h1, .div-h1-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------quienes somos-------------------*/
+/*portada*/
+.div-h1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/frente-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.div-h1 .portada {
+  display: flex;
+  justify-content: center;
+}
+.div-h1 .portada div {
+  width: 95%;
+}
+.div-h1 .portada div div h1 {
+  font-size: 100px;
+  font-family: "Great Vibes", cursive;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .div-h1 .portada div div h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .div-h1 .portada div div h1 {
+    font-size: 70px;
+  }
+}
+.div-h1 .portada div .div-whatsapp {
+  text-align: end;
+}
+.div-h1 .portada div .div-whatsapp .btn-wsp .whatsapp {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
+@media screen and (max-width: 576px) {
+  .div-h1 .portada div .div-whatsapp .btn-wsp .whatsapp {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*seccion uno*/
+.seccion-1-quienesSomos {
+  padding-top: 20px;
+  padding: 20px;
+}
+.seccion-1-quienesSomos .div-quienesSomos .titulo-texto {
+  flex-direction: column;
+}
+.seccion-1-quienesSomos .div-quienesSomos .titulo-texto .titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .seccion-1-quienesSomos .div-quienesSomos .titulo-texto .titulo {
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-1-quienesSomos .div-quienesSomos .titulo-texto .titulo {
+    font-size: 22px;
+    padding: 30px;
+  }
+}
+.seccion-1-quienesSomos .div-quienesSomos .titulo-texto .texto-quienesSomos {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: black;
+  padding: 20px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-1-quienesSomos .div-quienesSomos .titulo-texto .texto-quienesSomos {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-1-quienesSomos .div-quienesSomos .titulo-texto .texto-quienesSomos {
+    font-size: 18px;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+.seccion-1-quienesSomos .div-quienesSomos .div-imagen-mesa {
+  padding: 40px;
+}
+.seccion-1-quienesSomos .div-quienesSomos .div-imagen-mesa img {
+  -webkit-box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+  -moz-box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+  box-shadow: 17px 19px 7px -5px rgba(18, 16, 18, 0.4);
+}
+
+/*sección dos*/
+.seccion-2-quienesSomos {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.seccion-2-quienesSomos div .sociales-corporativos {
+  flex-direction: column;
+}
+.seccion-2-quienesSomos div .sociales-corporativos h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-2-quienesSomos div .sociales-corporativos h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-2-quienesSomos div .sociales-corporativos h3 {
+    font-size: 22px;
+  }
+}
+.seccion-2-quienesSomos div .sociales-corporativos p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-top: 30px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-2-quienesSomos div .sociales-corporativos p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-2-quienesSomos div .sociales-corporativos p {
+    font-size: 16px;
+  }
+}
+.seccion-2-quienesSomos div .descripcion {
+  flex-direction: column;
+  padding: 30px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.seccion-2-quienesSomos div .descripcion h4 {
+  font-size: 25px;
+  padding: 30px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-2-quienesSomos div .descripcion h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-2-quienesSomos div .descripcion h4 {
+    font-size: 20px;
+  }
+}
+.seccion-2-quienesSomos div .descripcion p {
+  font-size: 20px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-2-quienesSomos div .descripcion p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-2-quienesSomos div .descripcion p {
+    font-size: 16px;
+  }
+}
+
+/*servicios*/
+.div-h1-servicios, .div-h1-index, .div-h1, .seccion-2-quienesSomos div .sociales-corporativos, .seccion-2-quienesSomos div .descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------servicios--------------------*/
+/*portada*/
+.div-h1-servicios {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/mesa1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.div-h1-servicios .portada {
+  display: flex;
+  justify-content: center;
+}
+.div-h1-servicios .portada div {
+  width: 95%;
+}
+.div-h1-servicios .portada div div h1 {
+  font-size: 100px;
+  font-family: "Great Vibes", cursive;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .div-h1-servicios .portada div div h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .div-h1-servicios .portada div div h1 {
+    font-size: 70px;
+  }
+}
+.div-h1-servicios .portada div .div-whatsapp {
+  text-align: end;
+}
+.div-h1-servicios .portada div .div-whatsapp .btn-wsp .whatsapp {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
+@media screen and (max-width: 576px) {
+  .div-h1-servicios .portada div .div-whatsapp .btn-wsp .whatsapp {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*seccion 1*/
+.seccion-1-servicios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.seccion-1-servicios div div .servicios-h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .seccion-1-servicios div div .servicios-h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-1-servicios div div .servicios-h2 {
+    font-size: 25px;
+  }
+}
+.seccion-1-servicios div .h3-parrafos {
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .seccion-1-servicios div .h3-parrafos {
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-1-servicios div .h3-parrafos {
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    margin: 12px;
+  }
+}
+.seccion-1-servicios div .h3-parrafos .h3-p {
+  margin: 20px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  flex-direction: column;
+}
+.seccion-1-servicios div .h3-parrafos .h3-p h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .seccion-1-servicios div .h3-parrafos .h3-p h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-1-servicios div .h3-parrafos .h3-p h3 {
+    font-size: 20px;
+  }
+}
+.seccion-1-servicios div .h3-parrafos .h3-p p {
+  color: black;
+}
+
+/*seccion 2*/
+.seccion-2-servicios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.seccion-2-servicios .dibujo div {
+  display: flex;
+  justify-content: center;
+}
+.seccion-2-servicios .dibujo div img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-2-servicios .dibujo div img {
+    display: none;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-2-servicios .dibujo div img {
+    display: none;
+  }
+}
+.seccion-2-servicios .textos-2 div {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.seccion-2-servicios .textos-2 div h3 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 22px;
+}
+@media screen and (max-width: 576px) {
+  .seccion-2-servicios .textos-2 div h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .seccion-2-servicios .textos-2 div h3 {
+    font-size: 20px;
+  }
+}
+.seccion-2-servicios .textos-2 div p {
+  text-align: center;
+  padding: 50px;
+}
+
+/*galeria*/
+/*--------------------galeria--------------------*/
+.galeria-h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .galeria-h2 {
+    padding: 10px;
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .galeria-h2 {
+    padding: 10px;
+    font-size: 25px;
+  }
+}
+
+.carousel-item {
+  max-height: 40em;
+}
+
+.galeria-contenedor div .imagen-galeria {
+  height: 500px;
+  padding: 12px;
+}
+.galeria-contenedor div .imagen-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+  box-shadow: 10px 11px 4px -4px rgba(0, 0, 0, 0.45);
+}
+
+/*contacto*/
+/*--------------------contacto--------------------*/
+section {
+  padding: 40px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+section .form {
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: auto;
+}
+section .form .form-container {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-auto-columns: 100%;
+}
+section .form .form-container .form-title {
+  text-align: center;
+  font-size: 20px;
+}
+section .form .form-container .form-imput {
+  font-family: inherit;
+  font-size: 20px;
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+  border: 1px solid #bbb0b0;
+  border-radius: 10px;
+}
+section .form .form-container .form-imput--message {
+  resize: none;
+  padding: 18px 10px;
+  margin-bottom: 5px;
+}
+section .form .form-container .form-cta {
+  font-family: inherit;
+  font-size: 25px;
+  background-color: #8946A6;
+  color: white;
+  border: none;
+  font-weight: 400;
+  padding: 7px o;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
